@@ -1,0 +1,105 @@
+/* line 1, ../../wamp/www/fidel_fabrique/css/sass/_sidebar.scss */
+.bg-gradient-primary {
+  background-image: linear-gradient(180deg, #f4f0eb 100%, #f4f0eb 100%);
+  color: #505050;
+}
+
+/* line 6, ../../wamp/www/fidel_fabrique/css/sass/_sidebar.scss */
+.sidebar-dark .sidebar-brand {
+  color: #505050;
+}
+
+/* line 9, ../../wamp/www/fidel_fabrique/css/sass/_sidebar.scss */
+.sidebar-dark .sidebar-heading {
+  color: #b7b9cc;
+}
+
+/* line 13, ../../wamp/www/fidel_fabrique/css/sass/_sidebar.scss */
+.sidebar-dark .nav-item.active .nav-link {
+  color: #505050;
+}
+
+/* line 15, ../../wamp/www/fidel_fabrique/css/sass/_sidebar.scss */
+.sidebar-dark .nav-item.active .nav-link i {
+  color: #505050;
+}
+
+/* line 21, ../../wamp/www/fidel_fabrique/css/sass/_sidebar.scss */
+.sidebar-dark .nav-item .nav-link {
+  color: #505050;
+}
+
+/* line 23, ../../wamp/www/fidel_fabrique/css/sass/_sidebar.scss */
+.sidebar-dark .nav-item .nav-link :hover {
+  color: #2d2e33;
+}
+
+/* line 26, ../../wamp/www/fidel_fabrique/css/sass/_sidebar.scss */
+.sidebar-dark .nav-item .nav-link :active {
+  color: #505050;
+}
+
+/* line 29, ../../wamp/www/fidel_fabrique/css/sass/_sidebar.scss */
+.sidebar-dark .nav-item .nav-link :focus {
+  color: #505050;
+}
+
+/* line 32, ../../wamp/www/fidel_fabrique/css/sass/_sidebar.scss */
+.sidebar-dark .nav-item .nav-link i {
+  color: #505050;
+}
+
+/* line 37, ../../wamp/www/fidel_fabrique/css/sass/_sidebar.scss */
+.sidebar-dark #sidebarToggle {
+  background-color: #505050;
+}
+
+/* line 40, ../../wamp/www/fidel_fabrique/css/sass/_sidebar.scss */
+.sidebar-dark #sidebarToggle:hover {
+  background-color: #2d2e33;
+}
+
+/* line 45, ../../wamp/www/fidel_fabrique/css/sass/_sidebar.scss */
+.sidebar-dark .nav-item .nav-link[data-toggle="collapse"]::after {
+  color: #505050;
+}
+
+/* line 1, ../../wamp/www/fidel_fabrique/css/sass/_topbar.scss */
+.topbar {
+  background-color: #f4f0eb;
+  margin: 2px;
+  margin-top: 5px;
+}
+
+/* line 6, ../../wamp/www/fidel_fabrique/css/sass/_topbar.scss */
+.btn-primary {
+  background-color: #505050;
+  border-color: #505050;
+}
+
+/* line 10, ../../wamp/www/fidel_fabrique/css/sass/_topbar.scss */
+.btn-primary:hover {
+  background-color: #2d2e33;
+  border-color: #2d2e33;
+}
+
+/* line 14, ../../wamp/www/fidel_fabrique/css/sass/_topbar.scss */
+.btn-primary:focus {
+  background-color: #2d2e33;
+  border-color: #2d2e33;
+}
+
+/* line 18, ../../wamp/www/fidel_fabrique/css/sass/_topbar.scss */
+.btn-primary:active {
+  background-color: #2d2e33;
+  border-color: #2d2e33;
+}
+
+/* line 1, ../../wamp/www/fidel_fabrique/css/sass/_wrapper.scss */
+#content-wrapper {
+  margin-left: 10px;
+  margin-right: 2px;
+  background-color: #f4f0eb;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,47 @@
+.bg-gradient-primary{
+  background-image: linear-gradient(180deg, #f4f0eb 100%, #f4f0eb 100%);
+  color: #505050;
+}
+.sidebar-dark {
+  .sidebar-brand{
+    color: #505050;
+  }
+  .sidebar-heading{
+    color: #b7b9cc;
+  }
+  .nav-item.active{
+    .nav-link{
+      color: #505050;
+      i{
+        color: #505050;
+      }
+    }
+  }
+  .nav-item{
+    .nav-link{
+      color: #505050;
+      :hover{
+        color: #2d2e33;
+      }
+      :active{
+        color: #505050;
+      }
+      :focus{
+        color: #505050;
+      }
+      i{
+        color: #505050;
+      }
+    }
+  }
+  #sidebarToggle{
+    background-color: #505050;
+    }
+  #sidebarToggle:hover{
+      background-color: #2d2e33;
+  }
+}
+
+.sidebar-dark .nav-item .nav-link[data-toggle="collapse"]::after{
+  color: #505050;
+}
