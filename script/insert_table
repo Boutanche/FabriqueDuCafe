@@ -1,0 +1,5 @@
+INSERT INTO `page`
+(`id_page`, `key_file`, `metatitle`, `metadescription`, `h1`, `h2`, `menu`, `navbar`, `keywords`)
+VALUES
+    ('1', 'no_log', NULL, NULL, 'El_Fidel : Vous n\'êtes pas autorisé dans cette zone', 'Accès Interdit', 'no log', '0', NULL),
+    ('2', 'home', 'El Fidel : La Fabrique du café Gestion Interne de la fidélisation client', 'Environnement Logiciel de gestion de la Fidélisation à la Fabrique du café', 'El Fidel : Environnement Logiciel de Gestion de Fidélisation', 'Tableau de Bord', 'Tableau de Bord', '1', 'Dashboard, tableau de bord, Gestion client, fidélité');

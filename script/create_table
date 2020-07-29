@@ -1,0 +1,14 @@
+
+
+CREATE or ALTER TABLE `lafabriqueducafe_fidel`.`page` (
+ `id_page` TINYINT NOT NULL AUTO_INCREMENT COMMENT 'id de la page' ,
+ `key_file` VARCHAR(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_roman_ci NOT NULL COMMENT 'clé de la page' ,
+ `metatitle` VARCHAR(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_roman_ci NULL COMMENT 'Titre Meta' ,
+ `metadescription` VARCHAR(250) NULL COMMENT 'Description Meta' ,
+ `h1` VARCHAR(150) NOT NULL COMMENT 'Titre de la page' ,
+ `h2` VARCHAR(150) NOT NULL COMMENT 'Sous Titre de la page' ,
+ `menu` VARCHAR(20) NOT NULL COMMENT 'Affichage Menu' ,
+ `navbar` INT(2) NOT NULL COMMENT 'Appartien au menu' ,
+ `keywords` VARCHAR(500) NULL COMMENT 'Mots clès' ,
+
+PRIMARY KEY (`id_page`)) ENGINE = MyISAM CHARSET=utf8mb4 COLLATE utf8mb4_roman_ci COMMENT = 'Gestion des pages de El_Fidel';
