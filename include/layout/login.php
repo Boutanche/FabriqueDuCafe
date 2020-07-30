@@ -13,12 +13,13 @@
                                 <div class="text-center">
                                     <h1 class="h4 text-gray-900 mb-4">S'identifier!</h1>
                                 </div>
-                                <form class="user">
+                                <form class="user" action="./index.php" method="post" id="login">
+                                    <input type="hidden" name="formulaire" value="login"/>
                                     <div class="form-group">
-                                        <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                                        <input type="text" class="form-control form-control-user" id="login" aria-describedby="emailHelp" placeholder="Enter login...">
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                                        <input type="password" class="form-control form-control-user" id="password" placeholder="Password">
                                     </div>
                                     <div class="form-group">
                                         <div class="custom-control custom-checkbox small">

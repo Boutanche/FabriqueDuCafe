@@ -37,8 +37,8 @@
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Gestion des clients :</h6>
-                    <a class="collapse-item" href="buttons.html">Accéder à une carte client</a>
-                    <a class="collapse-item" href="cards.html">Créer une carte client</a>
+                    <a class="collapse-item" href="./index.php?page=search_card">Accéder à une carte client</a>
+                    <a class="collapse-item" href="./index.php?page=create_card">Créer une carte client</a>
                 </div>
             </div>
         </li>
@@ -52,9 +52,9 @@
             <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Gestion des produits:</h6>
-                    <a class="collapse-item" href="utilities-color.html">Vente d'un produit</a>
-                    <a class="collapse-item" href="utilities-border.html">Consulter stock</a>
-                    <a class="collapse-item" href="utilities-animation.html">Commandes</a>
+                    <a class="collapse-item" href="./index.php?page=sell">Vente d'un produit</a>
+                    <a class="collapse-item" href="./index.php?page=consult">Consulter stock</a>
+                    <a class="collapse-item" href="./index.php?page=order">Commandes</a>
                 </div>
             </div>
         </li>
@@ -76,27 +76,27 @@
             <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Administration:</h6>
-                    <a class="collapse-item" href="login.html">Tous les clients</a>
-                    <a class="collapse-item" href="register.html">Tous les produits</a>
-                    <a class="collapse-item" href="forgot-password.html">Toutes les commandes</a>
+                    <a class="collapse-item" href="./index.php?page=all_cards">Tous les clients</a>
+                    <a class="collapse-item" href="./index.php?page=all_products">Tous les produits</a>
+                    <a class="collapse-item" href="./index.php?page=all_orders">Toutes les commandes</a>
                     <div class="collapse-divider"></div>
                     <h6 class="collapse-header">Autre:</h6>
-                    <a class="collapse-item" href="404.html">Toutes les urgences</a>
-                    <a class="collapse-item" href="blank.html">Tous les messages</a>
+                    <a class="collapse-item" href="./index.php?page=emergency">Toutes les urgences</a>
+                    <a class="collapse-item" href="./index.php?page=message">Tous les messages</a>
                 </div>
             </div>
         </li>
 
         <!-- Nav Item - Charts -->
         <li class="nav-item">
-            <a class="nav-link" href="charts.html">
+            <a class="nav-link" href="./index.php?page=graphs">
                 <i class="fas fa-fw fa-chart-area"></i>
                 <span>Graphiques</span></a>
         </li>
 
         <!-- Nav Item - Tables -->
         <li class="nav-item">
-            <a class="nav-link" href="tables.html">
+            <a class="nav-link" href="./index.php?page=tables">
                 <i class="fas fa-fw fa-table"></i>
                 <span>Tables</span></a>
         </li>

@@ -81,7 +81,7 @@
                         Spending Alert: We've noticed unusually high spending for your account.
                     </div>
                 </a>
-                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                <a class="dropdown-item text-center small text-gray-500" href="./index.php?page=my_emergency">Show All Alerts</a>
             </div>
         </li>
         <!-- Nav Item - Messages -->
@@ -136,7 +136,7 @@
                         <div class="small text-gray-500">Chicken the Dog · 2w</div>
                     </div>
                 </a>
-                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                <a class="dropdown-item text-center small text-gray-500" href="./index.php?page=my_message">Read More Messages</a>
             </div>
         </li>
         <div class="topbar-divider d-none d-sm-block"></div>
@@ -148,15 +148,15 @@
             </a>
             <!-- Dropdown - User Information -->
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="./index.php?page=profile">
                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                     Profile
                 </a>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="./index.php?page=settings">
                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                     Settings
                 </a>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="./index.php?page=activity">
                     <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
                     Activity Log
                 </a>

@@ -1,4 +1,5 @@
 <!-- Page Heading -->
+
 <div id="content-wrapper" class="d-flex flex-column">
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <img style="padding: 10px" src="./img/logo-lafabriqueducafe.png" alt="Logo de la Fabrique du Café" title="La Fabrique du Café">
