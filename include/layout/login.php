@@ -1,4 +1,3 @@
-
 <div class="container">
     <!-- Outer Row -->
     <div class="row justify-content-center">
@@ -13,13 +12,13 @@
                                 <div class="text-center">
                                     <h1 class="h4 text-gray-900 mb-4">S'identifier!</h1>
                                 </div>
-                                <form class="user" action="./index.php" method="post" id="login">
+                                <form class="user" action="./index.php" method="POST" id="login">
                                     <input type="hidden" name="formulaire" value="login"/>
                                     <div class="form-group">
-                                        <input type="text" class="form-control form-control-user" id="login" aria-describedby="emailHelp" placeholder="Enter login...">
+                                        <input type="text" class="form-control form-control-user" name="log" aria-describedby="emailHelp" placeholder="Enter login...">
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" class="form-control form-control-user" id="password" placeholder="Password">
+                                        <input type="password" class="form-control form-control-user" name="pass" placeholder="Password">
                                     </div>
                                     <div class="form-group">
                                         <div class="custom-control custom-checkbox small">
@@ -27,11 +26,12 @@
                                             <label class="custom-control-label" for="customCheck">Remember Me</label>
                                         </div>
                                     </div>
-                                    <a href="./index.php?page=home" class="btn btn-primary btn-user btn-block">
+                                    <button type="submit" class="btn btn-primary btn-user btn-block">
                                         Login
-                                    </a>
+                                    </button>
                                     <hr>
                                 </form>
+                                <p><?php echo $message_log ?></p>
                                 <hr>
                                 <div class="text-center">
                                     <a class="small" href="forgot-password.html">Forgot Password?</a>
