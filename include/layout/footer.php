@@ -16,6 +16,7 @@
             <i class="fas fa-angle-up"></i>
         </a>
         <!-- Logout Modal-->
+        <?php include ('./lib/get_destroy.php');?>
         <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -28,7 +29,7 @@
                     <div class="modal-body">Selectionner "Fermer" si vous souhaitez fermer votre session.</div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Annuler</button>
-                        <a class="btn btn-primary" href="./index.php">Fermer</a>
+                        <a class="btn btn-primary" href="./index.php?deconnexion=1">Fermer</a>
                     </div>
                 </div>
             </div>

@@ -1,12 +1,9 @@
 <?php
-
 $reponse = $bdd->query('SELECT * FROM page');
-
 $ar_page = array();
 while ($donnees = $reponse->fetch()) {
     $ar_page[$donnees['key_file']] = $donnees;
 }
-
 if (isset($_GET['page']) && !empty($_GET['page'])) {
     if (array_key_exists($_GET['page'], $ar_page)) {
         $page = $_GET['page'];
@@ -19,10 +16,7 @@ $h1 = ($ar_page[$page]['h1']);
 $h2 =($ar_page[$page]['h2']);
 $menuTitre = ($ar_page[$page]['menu']);
 $navbar = ($ar_page[$page]['navbar']);
-
-
 $message_modal_admin = "Vous n'avez pas validé votre saisie";
-
 /**
  * ONLY FOR PRODUCTION /// NOT USE IN LOCALHOST
  */

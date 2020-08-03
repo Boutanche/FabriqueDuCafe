@@ -12,7 +12,7 @@
                                 <div class="text-center">
                                     <h1 class="h4 text-gray-900 mb-4">S'identifier!</h1>
                                 </div>
-                                <form class="user" action="./index.php" method="POST" id="login">
+                                <form class="user" action="./index.php?page=home" method="POST" id="login">
                                     <input type="hidden" name="formulaire" value="login"/>
                                     <div class="form-group">
                                         <input type="text" class="form-control form-control-user" name="log" aria-describedby="emailHelp" placeholder="Enter login...">
