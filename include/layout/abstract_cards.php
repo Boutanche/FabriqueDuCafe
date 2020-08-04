@@ -31,7 +31,7 @@
 
                         <?php
                         foreach ($ar_all_card as $key => $tb_card){
-                            echo '    <tr><td><a class="dropdown-item" href="#" data-toggle="modal" data-target="#CardModal" id="'.$tb_card['id_customer'].'">
+                            echo '    <tr class="line_customer"><td><a class="dropdown-item" href="#" data-toggle="modal" data-target="#CardModal" id="'.$tb_card['id_customer'].'">
                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                     '.$tb_card['lastname'].'
                 </a></td><td>'.$tb_card['firstname'].'</td><td>'.$tb_card['fidel_point'].'<td>'.$tb_card['creation_date'].'</td></tr>';
