@@ -102,4 +102,23 @@
   background-color: #f4f0eb;
 }
 
+/* line 1, ../../wamp/www/fidel_fabrique/css/sass/_modal.scss */
+.card_modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: whitesmoke;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+}
+
+/* line 13, ../../wamp/www/fidel_fabrique/css/sass/_modal.scss */
+.modal_card_position {
+  top: 20%;
+}
+
 /*# sourceMappingURL=main.css.map */
