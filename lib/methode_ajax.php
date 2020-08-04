@@ -1,9 +1,12 @@
 <?php
 $message_modal_test = "Putain !";
-if(!empty($_POST)){
-    var_dump($_POST);
-
-    if (isset($_POST['id_customer'])){
-        $this_card_id = $_POST['id_customer'];
+if(!empty($_GET)){
+    $message_modal_test="Ta mère";
+    if (isset($_GET['customer_id'])){
+        $message_modal_test = "Lol!";
     }
+    else {
+        $message_modal_test = 'Caramba encore raté !' ;
+    }
+
 }
