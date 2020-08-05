@@ -49,8 +49,9 @@
 </div>
 <!-- End of Main Content -->
 <!-- Card Modal -->
-<?php include './lib/methode_ajax.php';?>
+
 <div class="modal modal_card_position fade" id="CardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <?php include './lib/methode_ajax.php';?>
     <div class="modal-dialog" role="document">
         <div class="card_modal" id="CardModal">
             <div class="modal-header">
@@ -60,7 +61,7 @@
                 </button>
             </div>
             <div class="modal-header">
-                <h5 class="modal-title" id="card_tiltle">Nom du propriétaire de la carte : <span></span></h5>
+                <h5 class="modal-title" id="card_tiltle">Nom du propriétaire de la carte : <span id="card_name"></span></h5>
             </div>
             <div class="modal-body">Selectionner "Fermer" si vous souhaitez fermer votre session.</div>
             <div class="modal-footer">

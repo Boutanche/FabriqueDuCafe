@@ -16,7 +16,7 @@
             <!-- Custom styles for this template-->
             <link href="./css/sb-admin-2.css" rel="stylesheet">
             <!--  My css Custom for La Fabrique Du Café -->
-            <link href="./css/main.css" rel="stylesheet">
+            <link href="./css/main.css?v=1.<?php echo time()?>" rel="stylesheet">
         </head>
         <!-- Attention  : Ici le template body avait un id ="page-top" -->
     <body>

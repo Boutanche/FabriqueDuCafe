@@ -1,12 +1,21 @@
 <?php
-$message_modal_test = "Putain !";
+//include_once('../config/config_lafabrique_fidel.php');
 if(!empty($_GET)){
-    $message_modal_test="Ta mère";
-    if (isset($_GET['customer_id'])){
-        $message_modal_test = "Lol!";
-    }
-    else {
-        $message_modal_test = 'Caramba encore raté !' ;
+    if (isset($_GET['customer_id'])) {
+        include_once('../config/config_lafabrique_fidel.php');
+        $req_UserCard = $bdd->prepare('SELECT * FROM customer WHERE id_customer = :id');
+        $req_UserCard->execute(array(
+            'id' => $_GET['customer_id']
+        ));
+        $ThisCard = $req_UserCard->fetch();
+        $ThisCard_id = $ThisCard['id_customer'];
+        $ThisCard_name = $ThisCard['lastname'];
     }
 
+    else {
+        $message_modal_test = 'Caramba !' ;
+    }
+echo json_encode($ThisCard);
+
 }
+
