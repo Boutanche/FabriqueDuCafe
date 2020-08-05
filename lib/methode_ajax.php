@@ -5,9 +5,10 @@ if(!empty($_GET)){
         include_once('../config/config_lafabrique_fidel.php');
         $req_UserCard = $bdd->prepare('SELECT * FROM customer WHERE id_customer = :id');
         $req_UserCard->execute(array(
-            'id' => $_GET['customer_id']
         ));
+
         $ThisCard = $req_UserCard->fetch();
+
         $ThisCard_id = $ThisCard['id_customer'];
         $ThisCard_name = $ThisCard['lastname'];
     }
@@ -15,7 +16,7 @@ if(!empty($_GET)){
     else {
         $message_modal_test = 'Caramba !' ;
     }
-echo json_encode($ThisCard);
+echo (json_encode($ThisCard));
 
 }
 

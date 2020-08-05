@@ -14,13 +14,15 @@
                 dateType: 'html',
                 success:function (data) {
                     //alert(customer_id);
-                }
+                },
+                reponse : {id: id_customer,
+                name : lastname}
             }
         );
 
         call_ajax.done(function(response){
-            $("#card_number").html(response);
-            $("#card_name").html(response['lastname']);
+            $("#card_number").innerHTML = response.id;
+            $("#card_name").html(response.name);
             console.log(reponse.lastname)
 
         });
