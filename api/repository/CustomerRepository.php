@@ -52,8 +52,8 @@ class CustomerRepository {
         $allCustomers = new AllCustomers();
         $req_AllCustomers = $bddMathieu->query("SELECT * FROM customer");
         $allCustomers= array();
-        while ($data_card = $req_AllCustomers->fetch()){
-            $ar_all_card[$data_card['id_customer']]= $data_card;
+        while ($data_customer = $req_AllCustomers->fetch()){
+            $ar_all_card[$data_customer['id_customer']]= $data_customer;
         }
         return $allCustomers;
     }

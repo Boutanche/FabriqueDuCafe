@@ -1,4 +1,5 @@
 <?php
+//TODO : Jeter ce code :
 //include_once('../config/config_lafabrique_fidel.php');
 $ThisCardJSON = array();
 if(!empty($_GET)){

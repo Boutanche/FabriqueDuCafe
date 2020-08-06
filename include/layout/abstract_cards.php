@@ -60,10 +60,20 @@
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
-            <div class="modal-header">
-                <h5 class="modal-title" id="card_tiltle">Nom du propriétaire de la carte : <span id="card_name"></span></h5>
+            <div class="row modal-body">
+                <div class="col-12">
+                    <h6 class="modal-title" id="card_tiltle">Propriétaire de la carte :</h6>
+                </div>
             </div>
-            <div class="modal-body">Selectionner "Fermer" si vous souhaitez fermer votre session.</div>
+            <div class="row modal-dialog">
+                <div class="col-6">
+                    <h6 class="modal-dialog"><span id="card_name"></span>&nbsp</h6>
+                </div>
+                <div class="col-6">
+                    <h6 class="modal-dialog" id="card_title"><span id="card_firstname"></span></h6>
+                </div>
+            </div>
+            <div class="modal-body"></div>
             <div class="modal-footer">
                 <?php echo $message_modal_test;?>
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Annuler</button>

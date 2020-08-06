@@ -1,4 +1,4 @@
-
+//TODO : Jetter cette merde !
     $('.line_customer').on('click', function (event) {
         console.log("J'ai appuyé sur une ligne");
         var customer_id = event.target.id;
