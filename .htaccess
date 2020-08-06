@@ -3,6 +3,6 @@ RewriteEngine On
 
 # Rediriger tout ce qui eest /api/* vers le FrontController.
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^api(/.*)? /api/index.php [L,PT,QSA,E=ORIGINAL_PATH:$1]
+RewriteRule ^api(/.*)? api/index.php [L,PT,QSA,E=ORIGINAL_PATH:$1]
 
 RewriteRule . - [L]
