@@ -7,7 +7,7 @@ interface IController {
 	/**
 	 * Détermine si ce controller gère la requête.
 	 */
-	public function accept($requestPath);
+	public function accept($requestPath) : bool;
 	
 	/**
 	 * Dispatch la requête à ce controller.

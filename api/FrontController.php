@@ -1,7 +1,6 @@
 <?php
 
 require_once("IController.php");
-
 /**
  * Classe FrontController.
  * S'occupe de dispatcher les requêtes HTTP au bon controller.
@@ -25,7 +24,7 @@ class FrontController {
 	 * Enregistre un controller.
 	 */
 	public function registerController(IController $controller) {
-		$controllers[] = $controller;
+		$this->controllers[] = $controller;
 	}
 	
 	/**
@@ -33,9 +32,11 @@ class FrontController {
 	 */
 	public function dispatch($requestPath, $requestParams) {
 		foreach ($this->controllers as $controller){
-			if($controller.accept($requestPath)) {
+			if($controller->accept($requestPath)) {
 				// Dispatch au controller.
 				$responseBody = $controller->dispatch($requestPath, $requestParams);
+				echo $responseBody;
+				die();
 			}
 		}
 		
