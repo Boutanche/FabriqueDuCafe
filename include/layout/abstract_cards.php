@@ -51,7 +51,7 @@
 <!-- Card Modal -->
 
 <div class="modal modal_card_position fade" id="CardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <?php include './lib/methode_ajax.php';?>
+    <?php include './lib/fucking_ajax_methode.php';?>
     <div class="modal-dialog" role="document">
         <div class="card_modal" id="CardModal">
             <div class="modal-header">

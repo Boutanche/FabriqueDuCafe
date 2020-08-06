@@ -6,24 +6,34 @@
 
         console.log(customer_id);
         //Ajax Calling
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function(){
+            if(this.readyState == 4 && this.status == 200){
+                var MyObject = JSON.parse(this.responseText);
+                $("#card_name").html(MyObject.name);
+                console.log("Et là ?");
+            }
+        };
+        xmlhttp.open("GET",'./lib/methode_ajax.php', true);
+        xmlhttp.send();
+        //
         var call_ajax = $.ajax(
             {
                 url: './lib/methode_ajax.php',
-                method: 'GET',
+                method: 'getJSON',
                 data: {'id' : customer_id},
-                dateType: 'html',
-                success:function (data) {
-                    //alert(customer_id);
-                },
-                reponse : {id: id_customer,
-                name : lastname}
+                dateType: 'json',
+
             }
         );
+        console.log("Ho ? Debout là dedans x2!");
 
         call_ajax.done(function(response){
-            $("#card_number").innerHTML = response.id;
-            $("#card_name").html(response.name);
-            console.log(reponse.lastname)
+            let data = JSON.stringify(response);
+            $("#card_number").html('oupla');
+            //$("#card_name").html(data.name);
+            console.log(data);
+            console.log(data.id);
 
         });
         call_ajax.fail(function (jqXHR, textstatus) {

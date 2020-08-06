@@ -30,7 +30,9 @@ class CustomerController implements IController {
     public function accept($requestPath) : bool
     {
         // TODO[BIBI] Retourner true si $requestPath == /customers;
-        return true;
+        if($requestPath == '/customers' || $requestPath == '/getAll'){
+            return true;
+        }
     }
     
     public function dispatch($requestPath, $requestParams) {
@@ -47,6 +49,11 @@ class CustomerController implements IController {
     private function getByID($requestParams) : Customer {
         $customer = $this->customerService->getById($requestParams['id']);
         return $customer;
+    }
+
+    private function getAll() : AllCustomers {
+        $allCustomers = $this->customerService->getAll();
+        return $allCustomers;
     }
 
 

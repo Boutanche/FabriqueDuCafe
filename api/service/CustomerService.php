@@ -42,4 +42,12 @@ class CustomerService {
     public function getById($id) : Customer {
         return $this->customerRepository->getById($id);
     }
+
+    /**
+     * Retourne tous les Customer
+     * @return AllCustomers tous les Customers
+     */
+    public function getAll() : AllCustomers {
+        return $this->customerRepository->getAll();
+    }
 }
