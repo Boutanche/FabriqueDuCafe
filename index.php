@@ -1,7 +1,7 @@
 <?php
 session_start();
 header('content-type: text/html; charset=utf-8');
-include ('./config/config_lafabrique_fidel.php');
+include_once ('./config/config_lafabrique_fidel.php');
 include ('./lib/get_page.php');
 include ('./lib/post_login.php');
 //Inscription d'un nouvel utilisateur :
