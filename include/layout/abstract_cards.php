@@ -73,6 +73,23 @@
                     <h6 class="modal-dialog" id="card_title"><span id="card_firstname"></span></h6>
                 </div>
             </div>
+            <hr class="modal-body">
+            <div class="row modal-body">
+                <div class="col-6">
+                    <h6>Nombre de points : <span id="card_points"></span></h6>
+                </div>
+                <div class="col-6">
+                    <h6>Commentaires : <span id="card_comment"></span></h6>
+                </div>
+            </div>
+            <div class="row modal-body">
+                <div class="col-4">
+                    <div class="btn btn-danger" type="button" id="set_zero">Utiliser les points</div>
+                </div>
+                <div class="col-4">
+                    <div class="btn btn-success" type="button" id="add_one_point">Ajouter un point</div>
+                </div>
+            </div>
             <div class="modal-body"></div>
             <div class="modal-footer">
                 <?php echo $message_modal_test;?>

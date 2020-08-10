@@ -50,5 +50,6 @@
         <script src="./js/demo/chart-pie-demo.js"></script>
         <script src="./js/demo/datatables-demo.js"></script>
         <script src="./js/fucking_ajax.js"></script>
+        <script src="./js/btn_One_point"></script>
     </body>
 </html>

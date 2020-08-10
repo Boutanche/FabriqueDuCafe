@@ -32,8 +32,8 @@ class CustomerRepository {
     public function getById(int $id) : Customer {
         $bddMathieu = new PDO(
             'mysql:host=localhost:3308;dbname=lafabriqueducafe_fidel;chartset=utf8mb4_roman_ci',
-            'root',
-            '');
+            'lafabriqueducafe_stage',
+            'Lisa9915@2isa');
         
         $req_AllCustomers = $bddMathieu->query("SELECT * FROM customer where id = " . id);
         if($line = $req_AllCustomers->fetch()) {
@@ -42,8 +42,6 @@ class CustomerRepository {
             $customer->firstName = $line['firstname'];
             $customer->lastName = $line['lastname'];
             return $customer;
-        } else {
-            return null;
         }
     }
 

@@ -20,6 +20,8 @@ $('.line_customer').on('click', function (event) {
         $("#card_number").html(responseJson.id_customer);
         $("#card_name").html(responseJson.lastname);
         $("#card_firstname").html(responseJson.firstname);
+        $("#card_points").html(responseJson.fidel_point);
+        $("#card_comment").html(responseJson.comment);
     });
     call_ajax.fail(function (jqXHR, textStatus) {
         console.log("Failed Request : " + textStatus);
