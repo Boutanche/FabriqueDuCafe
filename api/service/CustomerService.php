@@ -45,9 +45,9 @@ class CustomerService {
 
     /**
      * Retourne tous les Customer
-     * @return AllCustomers tous les Customers
+     * @return array tous les Customers
      */
-    public function getAll() : AllCustomers {
+    public function getAll() : array {
         return $this->customerRepository->getAll();
     }
 }

@@ -29,21 +29,31 @@ class CustomerController implements IController {
      */
     public function accept($requestPath) : bool
     {
-        // TODO[BIBI] Retourner true si $requestPath == /customers;
-        if($requestPath == '/customers' || $requestPath == '/getAll'){
+        // Si l'url commence par /api/customers
+        $index = strpos ($requestPath == '/customers');
+        if($index){
             return true;
         }
     }
     
     public function dispatch($requestPath, $requestParams) {
-        // Dispatcher sur la bonne méthode.
-        // TODO[MJU] On verra plus tard.
-        $responseBody = $this->getByID($requestParams);
         
-        // Ecrire le résultat dans la réponse HTTP au format JSON.
-        header('Content-Type: application/json');
-        http_response_code(200); // OK
-        echo json_encode($responseBody);
+        if($requestPath == '/customers/get-by-id'){
+            // Dispatcher sur la bonne méthode.
+            // TODO[MJU] On verra plus tard.
+            $responseBody = $this->getByID($requestParams);
+        } else if($requestPath == '/customers/get-by-id') {
+            $responseBody = $this->getAll($requestParams);
+        }
+        
+        if(isset($responseBody)) {
+            // Ecrire le résultat dans la réponse HTTP au format JSON.
+            header('Content-Type: application/json');
+            http_response_code(200); // OK
+            echo json_encode($responseBody);
+        } else {
+            $this->send404($requestPath);
+        }
     }
 
     private function getByID($requestParams) : Customer {
@@ -51,11 +61,18 @@ class CustomerController implements IController {
         return $customer;
     }
 
-    private function getAll() : AllCustomers {
+    private function getAll() : array {
         $allCustomers = $this->customerService->getAll();
         return $allCustomers;
     }
 
-
+    /**
+     * Renvoie une erreur 404.
+     */
+    private function send404($requestPath) {
+        http_response_code(404);
+        echo 'Pas de controller trouvé pour ' . $requestPath;
+        die();
+    }
     
 }
