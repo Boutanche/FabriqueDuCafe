@@ -30,7 +30,7 @@ class CustomerController implements IController {
     public function accept($requestPath) : bool
     {
         // Si l'url commence par /api/customers
-        $index = strpos ($requestPath == '/customers');
+        $index = strpos ($requestPath, '/customers');
         if($index){
             return true;
         }
