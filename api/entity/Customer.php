@@ -1,13 +1,15 @@
 <?php
 class Customer implements JsonSerializable {
     public $id;
-    public $name;
-
+    public $firstName;
+    public $lastName;
+    
     public function jsonSerialize()
     {
         return array(
             'id'=>$this->id,
-            'name'=>$this->name,
+            'firstName'=>$this->firstName,
+            'lastName'=>$this->lastName,
         );
     }
 }

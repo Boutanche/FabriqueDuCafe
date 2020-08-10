@@ -32,14 +32,15 @@ class CustomerRepository {
     public function getById(int $id) : Customer {
         $bddMathieu = new PDO(
             'mysql:host=localhost:3308;dbname=lafabriqueducafe_fidel;chartset=utf8mb4_roman_ci',
-            'lafabriqueducafe_stage',
-            'Lisa9915@2isa');
+            'root',
+            '');
         
         $req_AllCustomers = $bddMathieu->query("SELECT * FROM customer where id = " . id);
         if($line = $req_AllCustomers->fetch()) {
             $customer = new Customer();
             $customer->id = $line['id_customer'];
-            $customer->id = $line['id_customer'];
+            $customer->firstName = $line['firstname'];
+            $customer->lastName = $line['lastname'];
             return $customer;
         } else {
             return null;
@@ -53,16 +54,16 @@ class CustomerRepository {
     public function getAll() : array {
         $bddMathieu = new PDO(
             'mysql:host=localhost:3308;dbname=lafabriqueducafe_fidel;chartset=utf8mb4_roman_ci',
-            'lafabriqueducafe_stage',
-            'Lisa9915@2isa');
+            'root',
+            '');
         $customers = array();
         $req_AllCustomers = $bddMathieu->query("SELECT * FROM customer");
         $customers= array();
-        while ($customer_line = $req_AllCustomers->fetch()){
+        while ($line = $req_AllCustomers->fetch()){
             $customer = new Customer();
-            $customer->id = $customer_line['id_customer'];
-            $customer->id = $customer_line['id_customer'];
-
+            $customer->id = $line['id_customer'];
+            $customer->firstName = $line['firstname'];
+            $customer->lastName = $line['lastname'];
             $customers[] = $customer;
         }
         return $customers;

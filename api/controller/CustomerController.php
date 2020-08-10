@@ -30,9 +30,11 @@ class CustomerController implements IController {
     public function accept($requestPath) : bool
     {
         // Si l'url commence par /api/customers
-        $index = strpos ($requestPath, '/customers');
-        if($index){
+        $index = strpos($requestPath, '/customers');
+        if($index !== false){
             return true;
+        } else {
+            return false;
         }
     }
     
@@ -42,7 +44,7 @@ class CustomerController implements IController {
             // Dispatcher sur la bonne méthode.
             // TODO[MJU] On verra plus tard.
             $responseBody = $this->getByID($requestParams);
-        } else if($requestPath == '/customers/get-by-id') {
+        } else if($requestPath == '/customers/get-all') {
             $responseBody = $this->getAll($requestParams);
         }
         
@@ -71,7 +73,7 @@ class CustomerController implements IController {
      */
     private function send404($requestPath) {
         http_response_code(404);
-        echo 'Pas de controller trouvé pour ' . $requestPath;
+        echo 'Pas de controller trouvé pour ICI ' . $requestPath;
         die();
     }
     
