@@ -3,7 +3,7 @@
         <head>
             <?php
             if ($number_modify >0){
-                echo "<meta http-equiv='refresh' content='0; url = ./index.php?page=modify_card'>";
+                echo "<meta http-equiv='refresh' content='0; url = http://localhost/fidel_fabrique/index.php?page=search_card'>";
             }
             else {
                 echo "";

@@ -15,6 +15,8 @@ include('./lib/post_modify_card.php');
             }
         else {
             echo ('Il y a un soucis');
+            $number_modify = 0;
+            $page = 'search_card';
         }
     }?>
     <hr>
@@ -56,7 +58,7 @@ include('./lib/post_modify_card.php');
             </div>
         </div>
         <div class="row-cols-3">
-            <label>Nombre de points à la création <span>*</span></label>
+            <label>Nombre de points actualisé <span>*</span></label>
             <input type="text" class="form-control form-control-user" name="fidel_point" value="<?php echo ($resultat_thisCard['fidel_point'])?>">
         </div>
         <hr>
@@ -93,7 +95,7 @@ include('./lib/post_modify_card.php');
         </div>
         <hr>
         <div class="row-cols-3">
-            <label>Numéro de carte <span>*</span></label>
+            <label>Numéro de carte : <span>NE JAMAIS MODIFIER LE NUMERO DE CARTE !!! </span></label>
             <input type="text" class="form-control form-control-user" name="id_customer" value="<?php echo ($resultat_thisCard['id_customer'])?>">
         </div>
         <button type="submit" class="btn btn-primary btn-user btn-block">
@@ -102,4 +104,4 @@ include('./lib/post_modify_card.php');
         <hr>
     </form>
 </div>
-<?php $number_modify = $number_modify +1 ; ?>
+<?php ?>
