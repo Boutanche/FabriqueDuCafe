@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="FR_fr">
         <head>
+            <?php
+            if ($number_modify >0){
+                echo "<meta http-equiv='refresh' content='0; url = ./index.php?page=modify_card'>";
+            }
+            else {
+                echo "";
+            }
+            ?>
             <meta charset="UTF-8">
             <meta http-equiv="content-type" content="text/html"; charset="UTF-8"/>
             <meta http-equiv="X-UA-Compatible" content="IE=edge">

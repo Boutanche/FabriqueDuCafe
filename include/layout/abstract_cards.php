@@ -44,6 +44,7 @@
     </div>
 
 </div>
+<?php echo ($number_modify); ?>
 <!-- /.container-fluid -->
 
 </div>
@@ -52,6 +53,7 @@
 
 <div class="modal modal_card_position fade" id="CardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <?php include './lib/fucking_ajax_methode.php';?>
+
     <div class="modal-dialog" role="document">
         <div class="card_modal" id="CardModal">
             <div class="modal-header">
@@ -68,6 +70,7 @@
             <div class="row modal-dialog">
                 <div class="col-6">
                     <h6 class="modal-dialog"><span id="card_name"></span>&nbsp</h6>
+                    <h6 class="modal-dialog">Version Alpha : Annuler pour accéder à modification de cette carte</h6>
                 </div>
                 <div class="col-6">
                     <h6 class="modal-dialog" id="card_title"><span id="card_firstname"></span></h6>
@@ -91,9 +94,12 @@
                 </div>
             </div>
             <div class="modal-body"></div>
-            <div class="modal-footer">
-                <?php echo $message_modal_test;?>
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Annuler</button>
+            <div class="modal-footer" id="">
+                <form class="user" action="./index.php?page=modify_card" method="POST" id="card_user>">
+                    <div id="modify">
+
+                    </div>
+                </form>
                 <a class="btn btn-primary" href="./index.php?page=search_card">Fermer</a>
             </div>
         </div>

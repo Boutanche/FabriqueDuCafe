@@ -1,5 +1,4 @@
 <?php
-
 $message_creation_card = "Vous n'avez pas encore crée de carte.";
 $today = date("Y:m:d");
 if (!empty($_POST)) {
