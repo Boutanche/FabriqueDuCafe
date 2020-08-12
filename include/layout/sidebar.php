@@ -3,7 +3,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="./index.php?page=home">
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="./index.php">
             <div class="sidebar-brand-icon rotate-n-15">
                 <img src="./img/icon-phil.svg">
             </div>
@@ -15,9 +15,19 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-            <a class="nav-link" href="./index.php">
+            <a class="nav-link" href="./index.php?page=home">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Mon Tableau de Bord</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./index.php?page=search_card">
+                <i class="fas fa-fw fa-address-card"></i>
+                <span>Les Cartes</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./index.php?page=create_card">
+                <i class="fas fa-fw fa-archive"></i>
+                <span>Créer une carte</span></a>
         </li>
 
         <!-- Divider -->
@@ -29,15 +39,16 @@
         </div>
 
         <!-- Nav Item - Pages Collapse Menu -->
+        <!--
         <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            <a class="nav-link collapsed" href="./index.php?page=search_card" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                 <i class="fas fa-fw fa-address-card"></i>
                 <span>Cartes El_Fidel</span>
             </a>
+        -->
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Gestion des clients :</h6>
-                    <a class="collapse-item" href="./index.php?page=search_card">Accéder à une carte client</a>
                     <a class="collapse-item" href="./index.php?page=create_card">Créer une carte client</a>
                 </div>
             </div>

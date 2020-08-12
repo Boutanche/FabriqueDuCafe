@@ -24,7 +24,7 @@ $('.line_customer').on('click', function (event) {
         $("#card_points").html(responseJson.fidel_point);
         $("#card_comment").html(responseJson.comment);
         $("#modify").html("" +
-            "<input type='hidden' name='id_userCard' value='"+responseJson.id_customer+"'><button class=\"btn btn-secondary\" type=\"submit\" href=\"./index.php?page=modify_card\">Annuler</button>");
+            "<input type='hidden' name='id_userCard' value='"+responseJson.id_customer+"'><button class=\"btn btn-success\" type=\"submit\" href=\"./index.php?page=modify_card\">Modifer</button>");
     });
     call_ajax.fail(function (jqXHR, textStatus) {
         console.log("Failed Request : " + textStatus);

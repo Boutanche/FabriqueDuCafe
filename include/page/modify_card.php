@@ -26,6 +26,16 @@ include('./lib/post_modify_card.php');
                         <input type="text" class="form-control form-control-user" name="card_firstname" value="<?php echo ($resultat_thisCard['firstname'])?>">
                     </div>
                 </div>
+                <div class="card-body">
+                        <div class="col-6">
+                            <label>Points <span>*</span></label>
+                            <input type="text" class="form-control form-control-user" name="fidel_point" value="<?php echo ($resultat_thisCard['fidel_point'])?>">
+                        </div>
+                        <div class="col-6">
+                            <label>Commentaires : </label>
+                            <textarea type="text" class="form-control form-control-user" name="card_comment" value="<?php echo ($resultat_thisCard['comment'])?>"><?php echo ($resultat_thisCard['comment'])?></textarea>
+                        </div>
+                </div>
                 <hr>
                 <div class="row">
                     <div class="form-group col-4">
@@ -51,10 +61,7 @@ include('./lib/post_modify_card.php');
                         <input type="text" class="form-control form-control-user" name="card_city" value="<?php echo ($resultat_thisCard['city'])?>">
                     </div>
                 </div>
-                <div class="row-cols-3">
-                    <label>Nombre de points actualisé <span>*</span></label>
-                    <input type="text" class="form-control form-control-user" name="fidel_point" value="<?php echo ($resultat_thisCard['fidel_point'])?>">
-                </div>
+
                 <hr>
                 <!-- Non implémenté :
                 <div class="row">
@@ -83,16 +90,12 @@ include('./lib/post_modify_card.php');
                     </div>
                 </div>
                     -->
-                <div class="row">
-                    <label>Commentaires : </label>
-                    <input type="text" class="form-control form-control-user" name="card_comment" value="<?php echo ($resultat_thisCard['comment'])?>">
-                </div>
-                <hr>
                 <div class="row-cols-3">
                     <label>Numéro de carte : <span>NE JAMAIS MODIFIER LE NUMERO DE CARTE !!! </span></label>
                     <input type="text" class="form-control form-control-user" name="id_customer" value="<?php echo ($resultat_thisCard['id_customer'])?>">
                 </div>
-                <button type="submit" class="btn btn-primary btn-user btn-block">
+                <br>
+                <button type="submit" class="btn btn-success btn-user btn-block">
                     Enregistrer les modifications
                     </button>
                 <hr>
@@ -101,7 +104,7 @@ include('./lib/post_modify_card.php');
         <?php
             }
         else {
-            echo ('Carte Actualisée !');
+            echo ('<div>Carte Actualisée !</div></div>');
         }
     }?>
 

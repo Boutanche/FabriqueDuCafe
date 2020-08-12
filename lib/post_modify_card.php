@@ -1,4 +1,5 @@
 <?php
+
 if (!empty($_POST)) {
     if (isset($_POST['modifier'])) {
         if ($_POST['modifier'] == 'card_modification') {

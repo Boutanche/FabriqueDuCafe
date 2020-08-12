@@ -29,24 +29,27 @@
                     </tfoot>
                     <tbody>
                         <?php
-                        foreach ($ar_all_card as $key => $tb_card){
-                            echo '    <tr class="line_customer"><td><a class="dropdown-item" href="#" data-toggle="modal" data-target="#CardModal" id="'.$tb_card['id_customer'].'">
-                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                    '.$tb_card['lastname'].'
-                </a></td><td>'.$tb_card['firstname'].'</td><td>'.$tb_card['fidel_point'].'<td>'.$tb_card['creation_date'].'</td></tr>';
-                        };?>
-                    </tr>
+                            foreach ($ar_all_card as $key => $tb_card){
+                                echo '<tr class="line_customer">
+                                    <td>
+                                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#CardModal" id="'.$tb_card['id_customer'].'">
+                                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                        '.$tb_card['lastname'].'
+                                    </td><td>'.$tb_card['firstname'].'</td><td>'.$tb_card['fidel_point'].'<td>'.$tb_card['creation_date'].'</td></tr>';
+                            };
+                        ?>
+                        </tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
 </div>
-<?php echo ('Spy : $number_modify = ' .$number_modify); ?>
 <!-- /.container-fluid -->
 </div>
 <!-- End of Main Content -->
 <!-- Card Modal -->
+
 <div class="modal modal_card_position fade" id="CardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <?php include './lib/fucking_ajax_methode.php';?>
     <div class="modal-dialog" role="document">
@@ -65,10 +68,14 @@
                     <h6 class="modal-dialog" id="card_title"><span id="card_firstname"></span></h6>
                     <h6 class="modal-dialog"><span id="card_name"></span>&nbsp</h6>
                 </div>
-                <div class="col-12">
-                    <h6 class="modal-dialog">Version Alpha : Annuler pour accéder à modification de cette carte, dans cette version.</h6>
+                <div class="col-6">
+                    <h6>Nombre de points : <span id="card_points"></span></h6>
+                </div>
+                <div class="col-6">
+                    <h6>Commentaires : <span id="card_comment"></span></h6>
                 </div>
             </div>
+            <!--
             <hr class="modal-body">
             <div class="row modal-body">
                 <div class="col-6">
@@ -86,6 +93,7 @@
                     <div class="btn btn-success" type="button" id="add_one_point">Ajouter un point</div>
                 </div>
             </div>
+            -->
             <div class="modal-body"></div>
             <div class="modal-footer" id="">
                 <form class="user" action="./index.php?page=modify_card" method="POST" id="card_user>">

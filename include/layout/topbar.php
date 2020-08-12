@@ -49,6 +49,7 @@
                 <h6 class="dropdown-header">
                     Urgences
                 </h6>
+                <!--
                 <a class="dropdown-item d-flex align-items-center" href="#">
                     <div class="mr-3">
                         <div class="icon-circle bg-primary">
@@ -83,6 +84,7 @@
                     </div>
                 </a>
                 <a class="dropdown-item text-center small text-gray-500" href="./index.php?page=my_emergency">Show All Alerts</a>
+                -->
             </div>
         </li>
         <!-- Nav Item - Messages -->
@@ -97,6 +99,7 @@
                 <h6 class="dropdown-header">
                     Messages
                 </h6>
+                <!--
                 <a class="dropdown-item d-flex align-items-center" href="#">
                     <div class="dropdown-list-image mr-3">
                         <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
@@ -138,6 +141,7 @@
                     </div>
                 </a>
                 <a class="dropdown-item text-center small text-gray-500" href="./index.php?page=my_message">Read More Messages</a>
+                -->
             </div>
         </li>
         <div class="topbar-divider d-none d-sm-block"></div>
@@ -148,7 +152,9 @@
                 <img class="img-profile rounded-circle" src="./img/user_img/chirac.png">
             </a>
             <!-- Dropdown - User Information -->
+
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <!--
                 <a class="dropdown-item" href="./index.php?page=profile">
                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                     Profile
@@ -161,6 +167,7 @@
                     <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
                     Activity Log
                 </a>
+                -->
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
