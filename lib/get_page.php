@@ -21,7 +21,6 @@ $message_modal_admin = "Vous n'avez pas validé votre saisie";
  * ONLY FOR PRODUCTION /// NOT USE IN LOCALHOST
  */
 /*
-
         $metatitle = utf8_encode($metatitle);
         $metadescription =utf8_encode($metadescription);
         $keywords = utf8_encode($keywords);

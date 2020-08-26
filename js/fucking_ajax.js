@@ -1,9 +1,9 @@
 //TODO : Rename
 var customer_id = "nothing";
-$('.line_customer').on('click', function (event) {
+$('.line_customer').on('click', (event) => {
     console.log("Click is OK");
     customer_id = event.target.id;
-    var call_ajax = $.ajax(
+    $.ajax(
         {
             url : './lib/fucking_ajax_methode.php',
             method : 'GET',
@@ -15,20 +15,22 @@ $('.line_customer').on('click', function (event) {
             error : function (message) {
                 console.log('Oups...')
             }
-        });
-    call_ajax.done(function(response){
-        var responseJson = JSON.parse(response)
-        $("#card_number").html(responseJson.id_customer);
-        $("#card_name").html(responseJson.lastname);
-        $("#card_firstname").html(responseJson.firstname);
-        $("#card_points").html(responseJson.fidel_point);
-        $("#card_comment").html(responseJson.comment);
-        $("#modify").html("" +
-            "<input type='hidden' name='id_userCard' value='"+responseJson.id_customer+"'><button class=\"btn btn-success\" type=\"submit\" href=\"./index.php?page=modify_card\">Modifer</button>");
-    });
-    call_ajax.fail(function (jqXHR, textStatus) {
-        console.log("Failed Request : " + textStatus);
-    });
+        }).then( (response) => {
+            var responseJson = JSON.parse(response)
+            $("#card_number").html(responseJson.id_customer);
+            $("#card_name").html(responseJson.lastname);
+            $("#card_firstname").html(responseJson.firstname);
+            $("#card_points").html(responseJson.fidel_point);
+            $("#card_comment").html(responseJson.comment);
+            $("#modify").html(
+                `
+                <input type='hidden' name='id_userCard' value="${responseJson.id_customer}"'>
+                <button class="btn btn-success" type="submit" href="./index.php?page=modify_card">
+                    Modifer
+                </button>;
+            `);
+            //"<input type='hidden' name='id_userCard' value='"+responseJson.id_customer+"'><button class=\"btn btn-success\" type=\"submit\" href=\"./index.php?page=modify_card\">Modifer</button>");
+        }).catch( (e) => console.log(`Failed Request : ${e}`));
 });
 //Button Point :
 $('#add_one_point').on('click', function (event){
@@ -46,7 +48,6 @@ $('#add_one_point').on('click', function (event){
             },
             error : function (data) {
                 console.log('POST + ' + data + ' est fail !'+ point);
-
             }
         }
     );
